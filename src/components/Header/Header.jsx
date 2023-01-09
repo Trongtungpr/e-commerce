@@ -69,7 +69,7 @@ const Header = () => {
     navigate("/cart");
   };
   const toggleProfileActions = () =>
-    profileActionRef.current.classList.toggle("show__profileActions");
+  profileActionRef.current.classList.toggle("show__profileActions");
   return (
     <header className="header">
       <Container>
@@ -78,7 +78,9 @@ const Header = () => {
             <div className="logo">
               <img src={logo} alt="logo" />
               <div>
-                <Link to='/home'><h1>Multimart</h1></Link>
+                <Link to="/home">
+                  <h1>Multimart</h1>
+                </Link>
                 {/* <h1>Multimart</h1> */}
               </div>
             </div>
@@ -126,6 +128,7 @@ const Header = () => {
                     <div className="d-flex align-items-center justify-content-center flex-column">
                       <Link to="/signup">Signup</Link>
                       <Link to="/login">Login</Link>
+                      <Link to="/dashboard">Dashboard</Link>
                     </div>
                   )}
                 </div>
